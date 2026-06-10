@@ -1,0 +1,93 @@
+:root {
+  --pico-font-family: "DM Sans", sans-serif;
+  --pico-background-color: #ffffff;
+  --pico-color: #222222;
+  --pico-muted-color: #5e6b5f;
+  --pico-primary: #5f7a61;
+  --pico-primary-hover: #506a52;
+  --pico-primary-focus: rgba(95, 122, 97, 0.2);
+  --pico-primary-inverse: #ffffff;
+}
+
+html {
+  background: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  color: #222222;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.7;
+}
+
+main.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+}
+
+section + section {
+  margin-top: 4rem;
+}
+
+h1,
+h2 {
+  color: #5f7a61;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-transform: none;
+}
+
+.role {
+  margin-bottom: 2rem;
+  color: #222222;
+  font-size: 1.05rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+a {
+  color: #5f7a61;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #506a52;
+  text-decoration: underline;
+}
+
+::selection {
+  background: rgba(95, 122, 97, 0.16);
+}
+
+@media (max-width: 600px) {
+  main.container {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  section + section {
+    margin-top: 3rem;
+  }
+}
