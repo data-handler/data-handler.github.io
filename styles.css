@@ -109,6 +109,24 @@ a:focus {
   color: var(--muted);
 }
 
+.case-studies {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.case-study h3 {
+  color: var(--heading);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.35rem;
+}
+
+.case-study p {
+  margin: 0;
+}
+
 ::selection {
   background: var(--selection);
 }
