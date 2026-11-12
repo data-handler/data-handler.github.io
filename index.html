@@ -3,85 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nick Adkinson — Software Consultant &amp; Developer</title>
-  <meta name="description" content="Nick Adkinson — Software consultant and developer helping businesses solve operational problems through internal systems, automation, reporting and web applications.">
+  <title>Nick Adkinson — Software Developer &amp; Consultant</title>
+  <meta name="description" content="Nick Adkinson builds the internal software businesses run on: timesheets, claims, inspections, integrations and reporting. 20+ years, based in the UK.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
-    <section class="intro">
-      <h1>Nick Adkinson</h1>
-      <p class="role">Software Consultant &amp; Developer</p>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#">Nick Adkinson</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#fun">Side projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-      <p>I help businesses solve operational problems through software. With over 20 years of experience designing and building commercial applications, I develop systems that improve internal processes, reduce manual effort and provide reliable business data.</p>
-
-      <p>I specialise in internal business systems, process automation, reporting solutions, web applications and database development.</p>
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">Software developer &amp; consultant · UK</p>
+      <h1>I build the software a business actually runs on.</h1>
+      <p class="lede">Not the shop window, the engine room. Timesheets, claims, inspections, the integrations that stop people typing the same numbers into three systems. I’ve been doing it for over 20 years, and I still like it best when a paper process quietly disappears.</p>
+      <p class="hero-links">
+        <a class="button" href="#contact">Get in touch</a>
+        <a class="quiet" href="#work">See what I’ve built &darr;</a>
+      </p>
     </section>
 
-    <section>
-      <h2>Experience</h2>
-      <p>Over the years I’ve developed systems for:</p>
-      <ul>
-        <li>Timesheet and payroll</li>
-        <li>Site inspection and auditing</li>
-        <li>Invoicing and reporting</li>
-        <li>Data collection and validation</li>
-        <li>Business process automation</li>
-      </ul>
-      <em>I have also built multiple integrations with third-party systems to streamline data exchange and reduce manual processing.</em>
+    <section id="work" class="wrap">
+      <h2 class="section-title">Things I’ve built</h2>
+      <p class="section-intro">Most of my recent work has been in-house at Gelder Group, where I’ve built the systems much of the business now depends on.</p>
+
+      <article class="story featured">
+        <p class="kicker">Gelder Group · Timesheets</p>
+        <h3>From the van to the payroll run</h3>
+        <div class="before-after">
+          <div>
+            <p class="label">Before</p>
+            <p>Handwritten sheets, spreadsheets and phone calls. Late submissions, no way of knowing whether anyone was where they said they were, and a weekly argument about hours worked versus hours paid. All of it typed in by hand.</p>
+          </div>
+          <div>
+            <p class="label">Now</p>
+            <p>Around 120 tradespeople submit from a simple app on their phone. Every sheet is checked against vehicle tracker data and matched to real jobs before anyone in the office sees it. Nobody re-keys the hours.</p>
+          </div>
+        </div>
+        <p>Behind the app, an integration service pulls each submission, enriches it with TN360 and Quartix tracker data, and matches it to jobs in myclaims, iMaintain and Exchequer. Around ten admin staff review their own department’s sheets in a console with separate views for admin, accounts, payroll, IT and the trades themselves. Accounts give the final sign-off, and every Tuesday at 2pm the approved hours post themselves into Exchequer, ready for the payroll run. Everyone can see who submitted what, who approved it and when.</p>
+        <ul class="tags">
+          <li>Node API on Linode</li>
+          <li>C# integration services</li>
+          <li>SQL Server</li>
+          <li>Exchequer COM toolkit</li>
+          <li>Active Directory roles</li>
+        </ul>
+      </article>
+
+      <article class="story">
+        <p class="kicker">Gelder Group · Insurance claims</p>
+        <h3>myclaims: the system that won the clients</h3>
+        <p>When Gelders needed a claims management system, an outside development company quoted six figures. I built it in-house instead. It took a year, and it was the first system I built there.</p>
+        <p>It turned out to be more than a cost saving. With its own claims platform, Gelders could start working directly with major insurers rather than only through brokers.</p>
+      </article>
+
+      <article class="story">
+        <p class="kicker">Field work</p>
+        <h3>Site inspections from a phone</h3>
+        <p>A Progressive Web App field staff use to record site visits, capture information and upload documents straight from their phones, so inspections arrive complete instead of being written up back at the office.</p>
+      </article>
+
+      <div class="also">
+        <p class="label">Along the way</p>
+        <p>iMaintain for maintenance jobs, reporting that replaces spreadsheet gymnastics, and a lot of integrations with third-party systems that were never designed to talk to each other.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Technology Stack</h2>
-      <p>I have experience designing and building business applications across a range of technologies.</p>
-      <ul>
+    <section id="fun" class="wrap">
+      <h2 class="section-title">Things I build for fun</h2>
+      <p class="section-intro">Same habits, different problems.</p>
+
+      <div class="cards">
+        <a class="card" href="https://tools.audiomission.co.uk/">
+          <h3>Speaker Design Tools</h3>
+          <p>Free browser-based loudspeaker design tools for DIY builders — box, crossover and baffle diffraction — written from the published maths and tested against known physics.</p>
+          <span class="go">tools.audiomission.co.uk &rarr;</span>
+        </a>
+        <a class="card" href="https://www.audiomission.co.uk/">
+          <h3>Audio Mission</h3>
+          <p>Build notes from my own speaker projects, for anyone daft enough to try the same thing.</p>
+          <span class="go">audiomission.co.uk &rarr;</span>
+        </a>
+        <a class="card" href="https://github.com/data-handler/workout-pwa">
+          <h3>Workout Log</h3>
+          <p>An offline-first app for logging home-gym sessions. No account, no server; it just remembers what you lifted last time so you can beat it.</p>
+          <span class="go">GitHub &rarr;</span>
+        </a>
+        <a class="card" href="https://github.com/data-handler">
+          <h3>Small open-source bits</h3>
+          <p>Lightweight RE:DOM form components and date utilities, published on npm because I got tired of writing them twice.</p>
+          <span class="go">GitHub &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap stack">
+      <h2 class="section-title">What I work with</h2>
+      <ul class="tags">
         <li>C#</li>
         <li>.NET / ASP.NET Core</li>
         <li>SQL Server</li>
-        <li>JavaScript (ES6+)</li>
+        <li>JavaScript</li>
+        <li>Node</li>
         <li>REST APIs</li>
-        <li>Progressive Web Apps (PWAs)</li>
+        <li>Progressive Web Apps</li>
         <li>Azure</li>
         <li>Git / GitHub</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Case Studies</h2>
-      <div class="case-studies">
-        <div class="case-study">
-          <h3>Mobile Site Inspection Application</h3>
-          <p>Developed a Progressive Web App used by field staff to record site visits, capture information and upload documentation directly from mobile devices.</p>
-        </div>
-        <div class="case-study">
-          <h3>Timesheet and Payroll Processing System</h3>
-          <p>Designed and developed a web-based timesheet system with validation and workflow features, reducing administration effort and improving payroll accuracy.</p>
-        </div>
-        <div class="case-study">
-          <h3>Business Reporting and Automation</h3>
-          <p>Built reporting and automation solutions that reduced manual data processing and improved visibility of key business information.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Consultancy Rates</h2>
-      <p>Consultancy from £75 per hour.</p>
-    </section>
-
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Available for freelance and consultancy work involving internal business systems, process automation, reporting solutions, web applications and database development.</p>
-      <p>Based in the UK and available for remote consultancy projects.</p>
-      <p>If you'd like to discuss a project, please get in touch.</p>
-      <p><a href="mailto:nick@datahandler.co.uk">nick@datahandler.co.uk</a></p>
-      <p><a href="https://www.linkedin.com/in/datahandler">LinkedIn</a></p>
+    <section id="contact" class="wrap contact">
+      <h2>Got a process that runs on paper, spreadsheets or goodwill?</h2>
+      <p>I take on freelance and consultancy work: internal systems, automation, reporting, web apps and databases. I’m based in the UK and work remotely. Consultancy is from £75 an hour, and the first conversation is just a conversation.</p>
+      <p class="contact-links">
+        <a class="button" href="mailto:nick@datahandler.co.uk">nick@datahandler.co.uk</a>
+        <a class="quiet" href="https://www.linkedin.com/in/datahandler">LinkedIn &rarr;</a>
+      </p>
     </section>
   </main>
+
+  <footer class="wrap foot">
+    <p>Nick Adkinson · datahandler.co.uk</p>
+  </footer>
 </body>
 </html>
